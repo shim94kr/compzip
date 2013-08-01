@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title> {% block title %}{% endblock %}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="{% static 'html5/css/normalize.css' %}">
+        <link rel="stylesheet" href="{% static 'html5/css/main.css' %}">
+        <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel = 'stylesheet'>
+        <link type="text/css" href="{% static 'jquery-ui-1.10.3.custom/css/redmond/jquery-ui-1.10.3.custom.css' %}" rel="stylesheet" />
+        <link href="{% static 'myscripts.css' %}" rel = 'stylesheet'>
+        <script src="{% static 'html5/js/vendor/modernizr-2.6.2.min.js' %}"></script>
+
+    </head>
+    <body>
+        <div id="body">
+            <div id="logo">
+                <img src = "{% static 'img/CompLogo.png' %}">
+            </div>
+            <div id="navigation_bar">
+                <ul class="nav nav-tabs">
+                    <li class="navlists" id="navf"><a href="#">User Ranking</a></li>
+                    <li class="navlists"><a href="#">Small Concert</a></li>
+                    <li class="navlists"><a href="#">...Ing Project</a></li>
+                    <li class="navlists"><a href="#">Technique</a></li>
+                    <li class="navlists"><a href="#">Event</a></li>
+                </ul>
+            </div>
+
+            {% block content %}
+            {% endblock %}
+            <footer>
+                <div id="footer-wrap1">
+                    <ul>
+                        <li>
+                            <a href="#">ABOUT</a>
+                            <span class="divider"> | </span>
+                        </li>
+                        <li><a href="#">SITE MAP</a></li>
+                    </ul>
+                </div>
+                <div id="footer-wrap2">
+                    <p>© Comp zip Inc. <span><a href="#">Privacy Policy</a></span></p>
+                </div>
+            </footer>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="{% static 'html5/js/vendor/jquery-1.9.1.min.js'%}"><\/script>')</script>
+        <script src="{% static 'html5/js/plugins.js' %}"></script>
+        <script src="{% static 'html5/js/main.js' %}"></script>
+        <script src= "{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+	    <script src="{% static 'jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js'%}"></script>
+	    <script src="{% static 'jquery-1.6.2.min.js' %}"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+        {% block home_script %}
+        {% endblock %}
+    </body>
+</html>

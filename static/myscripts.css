@@ -1,0 +1,279 @@
+#body{
+    width: 960px;
+    height: 700px;
+    position: relative;
+    left: 50%;
+    margin-left: -480px;
+    border: 1px solid #000;
+}
+
+#logo{
+    margin: 20px 0 0 12px;
+    width: 168px;
+    float: left;
+}
+
+#logo>img{
+    width: 168px;
+    height: 60px;
+}
+
+#navigation_bar{
+    margin: 40px 0 0 48px;
+    width: 696px;
+    float: left;
+}
+
+.nav{
+    margin-bottom: 0;
+    height: 39px;
+}
+
+.navlists{
+    margin: 0 0 0 24px;
+    width: 120px;
+    text-align: center;
+}
+
+#navf{
+    margin: 0;
+    text-align: center;
+}
+
+#column1{
+    position: relative;
+    margin: 20px 0 0 12px;
+    width: 168px;
+    height: 500px;
+    float: left;
+}
+
+#login_form{
+    padding: 12px 1px 0 1px;
+    text-align: center;
+    width: 165px;
+    border: 1px solid #040404;
+}
+
+#login_mani{
+    top: -10px;
+    left: 10px;
+    padding: 0 4px 0 4px;
+    font-family: Arial;
+    font-size: 15px;
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+}
+
+#login{
+    margin-top:0;
+    width: 58px;
+    height: 29px;
+    margin-bottom: 8px;
+    font-size: 11.4px;
+}
+
+#email{
+    font-size: 12px;
+}
+
+#password{
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+#signup{
+    margin-top: 5px;
+    width: 168px;
+}
+
+#myCarousel{
+    margin: 20px 0 0 0px;
+    padding: 10px 1px 0 1px;
+    border: 1px solid #040404;
+    height:130px;
+    width: 165px;
+}
+
+#event_mani{
+    top: -10px;
+    left: 10px;
+    padding: 0 4px 0 4px;
+    font-family: Arial;
+    font-size: 15px;
+    z-index: 100;
+    position: absolute;
+    background-color: #fff;
+}
+
+.carousel-inner{
+    width: 164px;
+    height: 118px;
+}
+
+.carousel-image{
+    width: 164px;
+    height: 118px;
+}
+
+#create_project{
+    width: 164px;
+    height: 100px;
+    margin: 15px 1px 0 1px;
+    border: 1px solid #040404;
+}
+
+.tabs-left>.nav{
+    min-width: 0;
+    max-width: 48px;
+    margin: 0;
+}
+
+#column2{
+    height: 500px;
+    width: 48px;
+    margin: 20px 0 0 0;
+    float: left;
+}
+
+.tabs-left>.nav-tabs{
+    height: 220px;
+    boder: 0;
+}
+
+.nav-tabs>.vertical-tab{
+    width: 47px;
+    height: 100px;
+}
+
+.nav-tabs>.vertical-tab>a{
+    text-align: center;
+    border: 0;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg); /* IE 9 */
+}
+
+.tabs-left>.nav-tabs>li>a{
+    min-width: 0;
+    padding: 0;
+    padding-top: 6px;
+    height: 27px;
+    width: 60px;
+    margin: 0;
+    margin-top: 11px;
+    min-height: 0;
+}
+
+
+.tabs-left>.nav-tabs .active>a:focus{
+    border: 1px solid #ddd;
+    border-bottom: 1px solid transparent;
+    cursor: default;
+}
+
+.tabs-left>.nav-tabs .active>a:hover{
+    border: 1px solid #ddd;
+    border-bottom: 1px solid transparent;
+    cursor: default;
+}
+
+.tabs-left>.nav-tabs .active>a{
+    border: 1px solid #ddd;
+    border-bottom: 1px solid transparent;
+    cursor: default;
+}
+
+#tutorialtab{
+    margin-top: -30px;
+}
+
+.tab-content{
+    width: 696px;
+    height: 501px;
+    border: 1px solid #ddd;
+    float: left;
+    margin-top: 18px;
+    overflow: visible;
+}
+
+.tab-content>.active{
+    width: 696px;
+    height: 501px;
+}
+
+a.listen_song{
+    background-position: 0px -215px;
+}
+
+a.btn_song{
+    width: 21px;
+    height: 22px;
+    background-image: url(img/btn_comm.gif);
+    text-indent: -9999px;
+    display: inline-block;
+}
+
+#tablefirst{
+    height: 60px;
+}
+
+#tablerest{
+    height: 40px;
+}
+
+.table td{
+    vertical-align: middle;
+}
+
+#download_compzip{
+    margin-top: 20px;
+    width: 168px;
+    height: 65px;
+}
+
+footer{
+    width: 950px;
+    height: 60px;
+    margin: 0px auto;
+    padding-top: 20px;
+    overflow: auto;
+    clear: none;
+}
+
+#footer-wrap1{
+    width: 950px;
+    height: 20px;
+    margin: 0px auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    list-style: none outside none;
+    font-family: "Helvetica Neue";
+}
+
+.divider{
+    font-family: Georgia, serif;
+    margin: 0px 15px;
+    color: rgb(204,204,204);
+}
+
+#footer-wrap1>ul{
+    list-style: none;
+    width: 155px;
+    height: 20px;
+    margin: 0px auto;
+    overflow: auto;
+}
+
+#footer-wrap1>ul>li{
+    float: left;
+}
+
+#footer-wrap2 {
+    text-align: center;
+}
+#slide_mood{
+    height: 30px;
+}

@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+    <div id="column1">
+        <form id="login_form" action="" method="POST">
+            <span id="login_mani">Login</span>
+            <input type="text" class="input-medium" id="email" name="username" placeholder="User Name">
+            <input type="text" class="input-small" id="password" name="password" placeholder="Password">
+            <button class="btn btn-sample" id="login" type="button">Log In</button>
+        </form>
+        <div id="afterlogin"></div>
+        <button class="btn btn-sample" id="signup" type="button">Sign Up?</button>
+        <img src="{% static 'img/create_project.gif' %}"  alt="" id="create_project">
+        <div id="myCarousel" class="carousel slide">
+            <span id="event_mani">Event</span>
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                 <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="carousel-image"><img src="{% static 'img/CompLogo.png' %}" alt=""></div>
+                    <div class="carousel-caption">
+                        <h4>First Thumbnail label</h4>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-image"><img src="{% static 'img/CompLogo.png' %}" alt=""></div>
+                    <div class="carousel-caption">
+                        <h4>Second Thumbnail label</h4>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-image"><img src="{% static 'img/CompLogo.png' %}" alt=""></div>
+                    <div class="carousel-caption">
+                        <h4>Third Thumbnail label</h4>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="download_compzip">
+            <img src="{% static 'img/Download.png' %}" alt="">
+        </div>
+    </div>
+    <div id="column2">
+        <div class="tabbable tabs-left">
+            <ul class="nav nav-tabs">
+                <li class="vertical-tab active"><a href="#1A" data-toggle="tab">Chart</a></li>
+                <li class="vertical-tab"><a href="#1B" data-toggle="tab" id="tutorialtab">Tutorial</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="tab-content">
+        <div class="tab-pane active" id="1A">
+            <table class="table table-striped">
+                {% for i in loop_times1 %}
+                    {% ifequal i 1 %}
+                        <tr id="tablefirst">
+                    {% else %}
+                        <tr id="tablerest">
+                    {% endifequal %}
+                        <td><input type="checkbox" value="1"></td>
+                        <td>{{ i }}</td>
+                        <td>hello</td>
+                        <td>woo-hyeon</td>
+                        <td><a class="btn_song listen_song" href="#">듣기</a></td>
+                    </tr>
+                {% endfor %}
+            </table>
+            <div class="pagination pagination-centered">
+                <ul>
+                    <li><a href="#">«</a></li>
+                    {% for i in loop_times2 %}
+                        <li><a href="#">{{ i }}</a></li>
+                    {% endfor %}
+                    <li><a href="#">»</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-pane" id="1B">
+            Tutorial
+        </div>
+    </div>
+{% endblock %}
+
+{% block home_script %}
+    <script src="{% static 'myscripts.js' %}"></script>
+{% endblock %}
