@@ -19,7 +19,7 @@
     <file path="$PROJECT_DIR$/../FamilyBridge/templates/base.html" changelist="3af07f39-2283-4939-8701-d6a9c7bf1ac0" time="1375218330157" ignored="false" />
     <file path="$PROJECT_DIR$/../FamilyBridge/core/views.py" changelist="3af07f39-2283-4939-8701-d6a9c7bf1ac0" time="1375218391160" ignored="false" />
     <file path="$PROJECT_DIR$/../FamilyBridge/FamilyBridge/settings.py" changelist="3af07f39-2283-4939-8701-d6a9c7bf1ac0" time="1375218551153" ignored="false" />
-    <file path="/settings.py" changelist="3af07f39-2283-4939-8701-d6a9c7bf1ac0" time="1375323255632" ignored="false" />
+    <file path="/settings.py" changelist="3af07f39-2283-4939-8701-d6a9c7bf1ac0" time="1375343494267" ignored="false" />
     <file path="/bootstrap.css" changelist="3af07f39-2283-4939-8701-d6a9c7bf1ac0" time="1375232263819" ignored="false" />
     <file path="/myscripts.js" changelist="3af07f39-2283-4939-8701-d6a9c7bf1ac0" time="1375321816448" ignored="false" />
     <file path="/models.py" changelist="3af07f39-2283-4939-8701-d6a9c7bf1ac0" time="1375318391456" ignored="false" />
@@ -53,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Procfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Procfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="38" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
@@ -89,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/compzip/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="77" selection-start="374" selection-end="374" vertical-scroll-proportion="-5.32">
+            <state line="4" column="14" selection-start="87" selection-end="87" vertical-scroll-proportion="0.13843352">
               <folding>
                 <element signature="e#39#48#0" expanded="true" />
               </folding>
@@ -160,8 +160,8 @@
         <option value="$PROJECT_DIR$/static/myscripts.js" />
         <option value="$PROJECT_DIR$/compzip/wsgi.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/compzip/settings.py" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/compzip/settings.py" />
       </list>
     </option>
   </component>
@@ -620,15 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/compzip/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="77" selection-start="374" selection-end="374" vertical-scroll-proportion="-5.32">
-          <folding>
-            <element signature="e#39#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/templates/main/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="41" selection-start="895" selection-end="895" vertical-scroll-proportion="-7.464286">
@@ -640,6 +631,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="38" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compzip/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="14" selection-start="87" selection-end="87" vertical-scroll-proportion="0.13843352">
+          <folding>
+            <element signature="e#39#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
